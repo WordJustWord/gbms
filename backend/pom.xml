@@ -5,9 +5,8 @@
 	<modules>
 		<module>gbms-commons</module>
 		<module>gbms-models</module>
-		<module>gbms-mgt-rest</module>
-		<module>gbms-service-rest</module>
 		<module>gbms-springboot-app</module>
+		<module>gbms-base</module>
 	</modules>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -32,6 +31,7 @@
 		<drools.version>7.8.0.Final</drools.version>
 		<powermock.version>2.0.0-RC.4</powermock.version>
 		<mapstruct.version>1.2.0.Final</mapstruct.version>
+		<jjwt.version>0.9.1</jjwt.version>
 	</properties>
 
 	<dependencies>
@@ -62,6 +62,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
