@@ -24,6 +24,12 @@ const userRouter = {
             name: 'RoleList',
             meta: { title: '角色列表', noCache: true }
         },
+        {
+            path: 'right',
+            component: () => import('@/views/users/right-list'),
+            name: 'RightList',
+            meta: { title: '权限列表', noCache: true }
+        },
     ]
 }
 
